@@ -6,63 +6,87 @@
 
     <title>Bats are the Coolest</title>
 
-    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
 
   </head>
   <body>
 
-    <div class="container-sm">
+    <div class="container justify-content-center">
 
       <div class="row">
 
-<form class="col" action="index.html" method="post">
+<form action="" method="post">
+
+<div class="form-group">
 
 <h1>BATS</h1>
 
-<p>This form is about bats. While they can transmit diseases from time to time, bats are actually incredible creatures. If you would like to read more about bats, including the answers to the questions below, please visit: </p>
-<label for="batslive">Name a country where bats live:</label><br>
-<input id="batslive" type="text" name="batslive"><br>
-<label for="batcolor">What color do you picture when you see a bat?</label><br>
-<input id="batcolor" type="text" name="batcolor"><br>
+<p class="lead">This form is about bats. While they can transmit diseases from time to time, bats are actually incredible creatures. If you would like to read more about bats, including the answers to the questions below, please visit: </p>
+</div>
+
+<div class="form-group">
+<label class="form-control-label" for="batslive">Name a country where bats live:</label><br>
+<input class="form-control" id="batslive" type="text" name="batslive"><br>
+</div>
+
+<div class="form-group">
+
+<label class="form-control-label" for="batcolor">What color do you picture when you see a bat?</label><br>
+<input class="form-control id="batcolor" type="text" name="batcolor"><br>
+</div>
+
+<div class="form-group">
+
 <label>Share an interesting thing you have heard about bats!</label><br>
-<textarea id="mytextarea" name="mytextarea" rows = "10"
+<textarea class="form-control id="mytextarea" name="mytextarea" rows = "10"
 >Your text here</textarea><br>
+</div>
 
-<p>How many species of bats are there?</p>
+<div class="form-group">
+<label class="d-block" for="batradio">How many species of bats are there?</label>
+<div class="form-check">
 
-  <input type="radio" id="100" name="batradio" value="batradio"
+  <input class="form-check-input" type="radio" id="100" name="batradio" value="100"
          checked>
-  <label for="100">100</label>
+  <label class="form-check-label" for="100">100</label>
 
-  <input type="radio" id="500" name="batradio" value="dewey">
-  <label for="500">500</label>
+  <input class="form-check-input" type="radio" id="500" name="batradio" value="500">
+  <label class="form-check-label" for="500">500</label>
 
-  <input type="radio" id="1200" name="batradio" value="louie">
-  <label for="1200">1200</label>
+  <input class="form-check-input" type="radio" id="1200" name="batradio" value="1200">
+  <label class="form-check-label" for="1200">1200</label>
 
-  <input type="radio" id="2000" name="batradio" value="louie">
-  <label for="2000">2000</label>
+  <input class="form-check-input" type="radio" id="2000" name="batradio" value="2000">
+  <label class="form-check-label" for="2000">2000</label>
+</div>
+</div>
 
 
 
-<p>What have you heard about bats?</p>
-  <input type="checkbox" id="fertilizer" name="batcheck"
+<div class="form-group">
+
+<label for="batcheck">What have you heard about bats?</label><br>
+
+  <input class="form-check-input" type="checkbox" id="fertilizer" name="batcheck"
          checked>
-  <label for="fertilizer">Bat dung has been mined as guano from caves and used as Fertilizer.</label>
+  <label class="form-check-label" for="fertilizer">Bat dung has been mined as guano from caves and used as Fertilizer.</label>
 <br>
-  <input type="checkbox" id="consumepests" name="batcheck">
-  <label for="consumepests">Bats consume insect pests, reducing the need for pesticides.</label>
+  <input class="form-check-input" type="checkbox" id="consumepests" name="batcheck">
+  <label class="form-check-label" for="consumepests">Bats consume insect pests, reducing the need for pesticides.</label>
 <br>
-  <input type="checkbox" id="disease" name="batcheck">
-  <label for="disease">They are highly mobile, social, and long-lived and can readily spread disease.</label>
+  <input class="form-check-input" type="checkbox" id="disease" name="batcheck">
+  <label class="form-check-label" for="disease">They are highly mobile, social, and long-lived and can readily spread disease.</label>
 <br>
-  <input type="checkbox" id="vampires" name="batcheck">
-  <label for="vampires">Bats are popularly associated with darkness, malevolence, witchcraft, vampires, and death.</label>
+  <input class="form-check-input" type="checkbox" id="vampires" name="batcheck">
+  <label class="form-check-label" for="vampires">Bats are popularly associated with darkness, malevolence, witchcraft, vampires, and death.</label>
 <br>
+</div>
 
-  <label for="echolocation">Bats locate food and can fly in the dark due to:</label>
+<div class="form-group">
 
-  <select name="senses" id="echolocation">
+  <label class="form-control-label" for="echolocation">Bats locate food and can fly in the dark due to:</label>
+
+  <select class="form-control name="senses" id="echolocation">
       <option value="">--Please choose an option--</option>
       <option value="smell">Smell</option>
       <option value="sight">Sight</option>
@@ -71,12 +95,12 @@
       <option value="sound">Sound</option>
       <option value="gps">GPS</option>
   </select>
+</div>
 
 <br>
-<input type="submit" name="submit" value="Submit">
-<input type="reset" name="reset" value="Reset"><br>
+<input class="btn btn-primary btn-sm" type="submit" name="submit" value="Submit">
+<input class="btn btn-secondary btn-sm" type="reset" name="reset" value="Reset"><br>
 </form>
-
 
 </div> <!-- END ROW --!>
 
